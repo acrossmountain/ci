@@ -13,7 +13,6 @@ import (
 func main() {
 	SpringBoot.GetMapping("/", func(ctx SpringWeb.WebContext) {
 		ctx.String(http.StatusOK, "hello world")
-
 	})
 
 	SpringBoot.RunApplication()

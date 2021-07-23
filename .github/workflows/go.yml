@@ -10,5 +10,9 @@ jobs:
         with:
           go-version: 1.14
         id: go
-      - name: FormatCode
+      - name: 格式化代码
         run: gofmt -w .
+      - name: 测试代码
+        run: go test .
+      - name: 编译代码
+        run: go build .
